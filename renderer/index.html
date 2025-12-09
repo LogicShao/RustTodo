@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rust + Electron Todo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📝 Todo 任务管理器</h1>
+      <p class="subtitle">Rust + Electron + TypeScript</p>
+    </header>
+
+    <main>
+      <!-- 添加任务表单 -->
+      <div class="add-todo-form">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="输入新任务..."
+          autocomplete="off"
+        >
+        <button id="addBtn">添加</button>
+      </div>
+
+      <!-- 任务列表 -->
+      <div class="todo-list" id="todoList">
+        <!-- 动态生成 -->
+      </div>
+
+      <!-- 统计信息 -->
+      <div class="stats">
+        <span>总计: <strong id="totalCount">0</strong></span>
+        <span>未完成: <strong id="activeCount">0</strong></span>
+        <span>已完成: <strong id="completedCount">0</strong></span>
+      </div>
+    </main>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

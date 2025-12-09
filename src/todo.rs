@@ -115,7 +115,7 @@ impl TodoList {
     // 2. 使用 fs::write() 将字符串写入文件
     // 3. 返回 Result<(), io::Error>
     pub fn save_to_file(&self, filename: &str) -> Result<(), io::Error> {
-        let json = serde_json::to_string(self)?;
+        let json = serde_json::to_string_pretty(self)?;
         fs::write(filename, json)?;
         Ok(())
     }

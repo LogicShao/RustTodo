@@ -1,0 +1,36 @@
+{
+  "name": "rust-electron-todo",
+  "version": "1.0.0",
+  "description": "A Todo app built with Rust + Electron + TypeScript",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc && cargo build --release",
+    "build:ts": "tsc",
+    "build:rust": "cargo build --release",
+    "start": "npm run build:ts && electron .",
+    "dev": "tsc && electron .",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LogicShao/RustTodo.git"
+  },
+  "keywords": [
+    "electron",
+    "rust",
+    "typescript",
+    "todo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LogicShao/RustTodo/issues"
+  },
+  "homepage": "https://github.com/LogicShao/RustTodo#readme",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "electron": "^39.2.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

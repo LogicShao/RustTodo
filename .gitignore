@@ -1,4 +1,23 @@
+# Rust
 /target
+Cargo.lock
+
+# Node.js
+node_modules/
+dist/
+npm-debug.log*
+package-lock.json
+.npmrc
+
+# 数据文件
+todos.json
+
+# 编辑器
 .idea/
 .vscode/
-todos.json
+*.swp
+*.swo
+
+# 操作系统
+.DS_Store
+Thumbs.db
